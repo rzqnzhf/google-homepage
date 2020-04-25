@@ -1,86 +1,50 @@
-<head>
-    <title>Google</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        nav {
-            margin: 0;
-            padding: 0;
-            min-width: 181px;
-            float: right;
-            display: inline-block;
-            outline: none;
-            vertical-align: middle;
-            text-align: right;
-            white-space: nowrap;
-        }
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <title>Google</title>
+        <meta charset="UTF-8">
+    </head>
 
-        img {
-            padding-top: 109px;
-            float: center;
-        }
+    <body>
+        <header>
+            <nav class="top-left">
+                <a class="top-links" href="#">About</a>
+                <a class="top-links" href="#">Store</a> 
+            </nav>
+            <nav class="top-right">
+                <a class="top-links" href="#">Gmail</a>
+                <a class="top-links" href="#">Images</a>
+                <a class="top-links" href="#" id="apps"></a>
+                <a class="top-links" id="sign-in" href="#"><strong>Sign in</strong></a>
+            </nav>
+        </header>
 
-        body {
-            font-family: arial, sans-serif;
-            font-size: 13px;
-        }
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" class="logo">
 
-        main {
-            height: 233px;
-            text-align: center;
-            display: block;
-        } 
-
-        #left {
-            float: left;
-
-        }
-
-        #right {
-            float: right;
-        }
-
-        
-    </style>
-</head>
-
-<body>
-    <nav>
-        <a>Gmail</a>
-        <a>Images</a>
-        <i class="material-icons" style="font-size:20px">apps</i>
-        <i class="material-icons" style="font-size:20px">arrow_drop_down_circle</i>        
-    </nav>
-
-    <main class="content" id="main">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
-        <br>
-        <input type="search" name="search bar" placeholder="img">
-        <br>
-        <button type="button">Google Search</button>
-        <button type="button">I'm Feeling Lucky</button>
-        <br>
-        <a href="">Stay home. Save lives. Help stop coronavirus</a>
-        <br>
-        <p>Google offered in: <a href="">Melayu</a></p>
-
-    </main>
-</body>
-
-<footer>
-    <div class="footer">
-        <div id="left">
-            <a>Advertising</a>
-            <a>Business</a>
-            <a>About</a>
-            <a>How Search works</a>
-            </div>
-        
-            <div id="right">
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Settings</a>
-            </div>
+        <div class="search-bar">
+            <input type="text" class="search-text">
+            <div id="magnifying-glass"></div>
+            <div id="mic"></div>
         </div>
-    </footer>
 
-    
+        <div class="buttons">
+            <input value="Google Search" type="submit" class="google-search">
+            <input value="I'm Feeling Lucky" type="submit" class="feeling-lucky">
+        </div>
+
+        <footer>
+            <nav class="bottom-left">
+                <a class="bottom-links" href="#">Advertising</a>
+                <a class="bottom-links" href="#">Business</a>
+                <a class="bottom-links" href="#">How Search Works</a>  
+            </nav>
+            <nav class="bottom-right">
+                <a class="bottom-links" href="#">Privacy</a>
+                <a class="bottom-links" href="#">Terms</a>
+                <a class="bottom-links" href="#">Settings</a>
+            </nav>
+        </footer>
+
+    </body>
+
+</html>
